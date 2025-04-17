@@ -1,13 +1,28 @@
-# Sample Hardhat Project
+# Chainlink dApp Example backend
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+## tutorial
+    mkdir chainlink-dapp-example
+    cd chainlink-dapp-example
+    mkdir backend
+    cd backend
+    code ./
 
-Try running some of the following tasks:
+## Vscode:Create a new terminal
+    npm init -y
+    npm install --save-dev hardhat
+    npx hardhat init
+    (choose create javascript project, choose default parameters)
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+    npm install --save-dev @chainlink/contracts
+    npm install --save-dev dotenv
+
+## Infura
+    We recommend signing up for a free Infura or Alchemy account to get an RPC URL.
+
+## .env example:
+    SEPOLIA_RPC_URL='https://sepolia.infura.io/v3/xxxxxxxxxxxxxxxxxxx'
+    PRIVATE_KEY='xxxxxxxxxxxxxxxxxxxxxxx'
+
+## deploy
+    npx hardhat compile
+    npx hardhat run --network sepolia scripts/deploy.js
