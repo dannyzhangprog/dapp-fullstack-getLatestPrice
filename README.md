@@ -1,5 +1,5 @@
-# Chainlink dApp Example
-    My development environment is WSL2
+# dapp fullstack demo
+    check the current price of Ethereum using the ETH/USD price feed on Sepolia.
 
 ## tutorial
     1.install wsl2
